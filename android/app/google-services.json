@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "135416438680",
+    "firebase_url": "https://db-test-13f5f-default-rtdb.firebaseio.com",
+    "project_id": "db-test-13f5f",
+    "storage_bucket": "db-test-13f5f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135416438680:android:d20b7486c80c1e693d15ed",
+        "android_client_info": {
+          "package_name": "com.example.evera"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ8CTFnkj3ujdZEat4oVgU5rniuK9ZZfk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
