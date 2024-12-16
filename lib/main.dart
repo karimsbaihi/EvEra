@@ -62,6 +62,9 @@ class MyApp extends StatelessWidget {
         '/confirm': (context) =>const Confirm(),
         '/notifications': (context) =>const Notifications(),
 
+        '/description2': (context) =>const Description2(),
+        '/description3': (context) =>const Description3(),
+
         '/signup1' : (context) => const SignUpProfile(),
         '/signup2' : (context) => const SignUp(),
         '/choosePref': (context) =>const Prefs(),
