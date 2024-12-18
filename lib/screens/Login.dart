@@ -1,11 +1,10 @@
+import 'package:evera/authentification/auth_service.dart';
 import 'package:evera/styles/colors.dart';
 import 'package:evera/components/goBack.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../styles/styles.dart';
-
-
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -15,10 +14,29 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-
+  // get auth service
+  final authService = AuthService();
   final formKey = GlobalKey<FormState>();
-  String password='';
 
+  //text controllers
+  final _emailController = TextEditingController();
+  final _passwordController = TextEditingController();
+
+  //login button pressed
+  void login() async {
+    //prepare data
+    final email = _emailController.text;
+    final password = _passwordController.text;
+
+    //attempt login...
+    try{
+      await authService.signInWithEmailPassowrd(email, password)
+    }
+    //catch errors.....
+    catch(e){
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("error : $e"),)); 
+    }
+  }
 
   @override
   void initState() {
@@ -36,14 +54,20 @@ class _LoginState extends State<Login> {
     return Scaffold(
       backgroundColor: mainBlack,
       appBar: AppBar(
-        leading: (Navigator.canPop(context)?goBack():null),
+        leading: (Navigator.canPop(context) ? goBack() : null),
         title: Align(
           alignment: Alignment.centerRight,
           child: GestureDetector(
-            onTap: (){
+            onTap: () {
               Navigator.pushNamed(context, '/home');
             },
-            child: Text("Skip",style: TextStyle(color: mainGreen,),textAlign: TextAlign.right,),
+            child: Text(
+              "Skip",
+              style: TextStyle(
+                color: mainGreen,
+              ),
+              textAlign: TextAlign.right,
+            ),
           ),
         ),
         backgroundColor: mainBlack,
@@ -56,7 +80,10 @@ class _LoginState extends State<Login> {
             children: [
               const Padding(
                 padding: EdgeInsets.fromLTRB(15, 33, 15, 70),
-                child: Text("Login",style: TextStyle(fontSize: 42,color: Colors.white),),
+                child: Text(
+                  "Login",
+                  style: TextStyle(fontSize: 42, color: Colors.white),
+                ),
               ),
               Form(
                 key: formKey,
@@ -65,36 +92,31 @@ class _LoginState extends State<Login> {
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 12),
                       child: TextFormField(
-                        onTapOutside: (PointerDownEvent event) {
-                          // Remove focus when tapped outside
-                          FocusScope.of(context).unfocus();
-                        },
-                        style: const TextStyle(color: Color(0xffB3B3B3)),
-                        cursorColor: mainGreen,
-                        decoration: InputDeco('Email')
-
-                      ),
+                        controller: _emailController,
+                          onTapOutside: (PointerDownEvent event) {
+                            // Remove focus when tapped outside
+                            FocusScope.of(context).unfocus();
+                          },
+                          style: const TextStyle(color: Color(0xffB3B3B3)),
+                          cursorColor: mainGreen,
+                          decoration: InputDeco('Email')),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 12),
                       child: TextFormField(
-                        onChanged: (value){
-                          password=value;
-                        },
-                        validator: (value){
-
-                        },
-                        onTapOutside: (PointerDownEvent event) {
-                          // Remove focus when tapped outside
-                          FocusScope.of(context).unfocus();
-                        },
-                        style: const TextStyle(color: Color(0xffB3B3B3)),
-                        cursorColor: mainGreen,
-                        obscureText: true,
-
-                        decoration: InputDeco('Password')
-
-                      ),
+                        controller: _passwordController,
+                          onChanged: (value) {
+                            // password = value;
+                          },
+                          validator: (value) {},
+                          onTapOutside: (PointerDownEvent event) {
+                            // Remove focus when tapped outside
+                            FocusScope.of(context).unfocus();
+                          },
+                          style: const TextStyle(color: Color(0xffB3B3B3)),
+                          cursorColor: mainGreen,
+                          obscureText: true,
+                          decoration: InputDeco('Password')),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 12),
@@ -103,7 +125,7 @@ class _LoginState extends State<Login> {
                           if (formKey.currentState!.validate()) {
                             formKey.currentState!.save();
                             var prefs = await SharedPreferences.getInstance();
-                            prefs.setBool('logged',true);
+                            prefs.setBool('logged', true);
                             Navigator.pushNamed(context, '/home');
                           }
                         },
@@ -117,7 +139,8 @@ class _LoginState extends State<Login> {
                           child: const Center(
                             child: Text(
                               "Login",
-                              style: TextStyle(fontSize: 24,color: Colors.white),
+                              style:
+                                  TextStyle(fontSize: 24, color: Colors.white),
                             ),
                           ),
                         ),
@@ -125,9 +148,11 @@ class _LoginState extends State<Login> {
                     ),
                     const Padding(
                       padding: EdgeInsets.symmetric(vertical: 15),
-                      child: Text("Forget Password?",style: TextStyle(color: Colors.white),),
+                      child: Text(
+                        "Forget Password?",
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
-
                   ],
                 ),
               ),
@@ -136,11 +161,19 @@ class _LoginState extends State<Login> {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 22),
                   child: GestureDetector(
-                      onTap: (){
+                      onTap: () {
                         Navigator.pushNamed(context, '/signup1');
                       },
-                      child: const Text("Don't have an account? Sign up",style: TextStyle(color: Colors.white),)
-                  ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Text(
+                            "Don't have an account?  ",
+                            style: TextStyle(color: Colors.white),
+                          ),
+                          Text("Sign up", style: TextStyle(color: mainGreen)),
+                        ],
+                      )),
                 ),
               ),
             ],

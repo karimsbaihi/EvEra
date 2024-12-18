@@ -1,0 +1,1 @@
+ /home/karim/Documents/GitHub/EvEra/.dart_tool/flutter_build/ba59aa23cbb4bbfe55f298b115afc641/native_assets.yaml: 

@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /home/karim/Desktop/md/projectt/build/linux/x64/debug/
+cmake_ninja_workdir = /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/
 # =============================================================================
 # Object build statements for EXECUTABLE target evera
 
@@ -49,29 +49,35 @@ cmake_ninja_workdir = /home/karim/Desktop/md/projectt/build/linux/x64/debug/
 
 build cmake_object_order_depends_target_evera: phony || cmake_object_order_depends_target_file_selector_linux_plugin cmake_object_order_depends_target_gtk_plugin cmake_object_order_depends_target_url_launcher_linux_plugin flutter/flutter_assemble
 
-build CMakeFiles/evera.dir/main.cc.o: CXX_COMPILER__evera_unscanned_Debug /home/karim/Desktop/md/projectt/linux/main.cc || cmake_object_order_depends_target_evera
+build CMakeFiles/evera.dir/main.cc.o: CXX_COMPILER__evera_unscanned_Debug /home/karim/Documents/GitHub/EvEra/linux/main.cc || cmake_object_order_depends_target_evera
   DEFINES = -DAPPLICATION_ID=\"com.example.evera\"
   DEP_FILE = CMakeFiles/evera.dir/main.cc.o.d
   FLAGS = -g -Wall -Werror -pthread
-  INCLUDES = -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/include -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/gtk/linux/include -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/include -isystem /usr/include/gtk-3.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/sysprof-6 -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cloudproviders -isystem /usr/include/atk-1.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include
+  INCLUDES = -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/include -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/gtk/linux/include -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/include -isystem /usr/include/gtk-3.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/sysprof-6 -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cloudproviders -isystem /usr/include/atk-1.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include
   OBJECT_DIR = CMakeFiles/evera.dir
   OBJECT_FILE_DIR = CMakeFiles/evera.dir
+  TARGET_COMPILE_PDB = CMakeFiles/evera.dir/
+  TARGET_PDB = intermediates_do_not_run/evera.pdb
 
-build CMakeFiles/evera.dir/my_application.cc.o: CXX_COMPILER__evera_unscanned_Debug /home/karim/Desktop/md/projectt/linux/my_application.cc || cmake_object_order_depends_target_evera
+build CMakeFiles/evera.dir/my_application.cc.o: CXX_COMPILER__evera_unscanned_Debug /home/karim/Documents/GitHub/EvEra/linux/my_application.cc || cmake_object_order_depends_target_evera
   DEFINES = -DAPPLICATION_ID=\"com.example.evera\"
   DEP_FILE = CMakeFiles/evera.dir/my_application.cc.o.d
   FLAGS = -g -Wall -Werror -pthread
-  INCLUDES = -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/include -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/gtk/linux/include -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/include -isystem /usr/include/gtk-3.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/sysprof-6 -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cloudproviders -isystem /usr/include/atk-1.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include
+  INCLUDES = -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/include -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/gtk/linux/include -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/include -isystem /usr/include/gtk-3.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/sysprof-6 -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cloudproviders -isystem /usr/include/atk-1.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include
   OBJECT_DIR = CMakeFiles/evera.dir
   OBJECT_FILE_DIR = CMakeFiles/evera.dir
+  TARGET_COMPILE_PDB = CMakeFiles/evera.dir/
+  TARGET_PDB = intermediates_do_not_run/evera.pdb
 
-build CMakeFiles/evera.dir/flutter/generated_plugin_registrant.cc.o: CXX_COMPILER__evera_unscanned_Debug /home/karim/Desktop/md/projectt/linux/flutter/generated_plugin_registrant.cc || cmake_object_order_depends_target_evera
+build CMakeFiles/evera.dir/flutter/generated_plugin_registrant.cc.o: CXX_COMPILER__evera_unscanned_Debug /home/karim/Documents/GitHub/EvEra/linux/flutter/generated_plugin_registrant.cc || cmake_object_order_depends_target_evera
   DEFINES = -DAPPLICATION_ID=\"com.example.evera\"
   DEP_FILE = CMakeFiles/evera.dir/flutter/generated_plugin_registrant.cc.o.d
   FLAGS = -g -Wall -Werror -pthread
-  INCLUDES = -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/include -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/gtk/linux/include -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/include -isystem /usr/include/gtk-3.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/sysprof-6 -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cloudproviders -isystem /usr/include/atk-1.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include
+  INCLUDES = -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/include -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/gtk/linux/include -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/include -isystem /usr/include/gtk-3.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/sysprof-6 -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cloudproviders -isystem /usr/include/atk-1.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include
   OBJECT_DIR = CMakeFiles/evera.dir
   OBJECT_FILE_DIR = CMakeFiles/evera.dir/flutter
+  TARGET_COMPILE_PDB = CMakeFiles/evera.dir/
+  TARGET_PDB = intermediates_do_not_run/evera.pdb
 
 
 # =============================================================================
@@ -81,21 +87,23 @@ build CMakeFiles/evera.dir/flutter/generated_plugin_registrant.cc.o: CXX_COMPILE
 #############################################
 # Link the executable intermediates_do_not_run/evera
 
-build intermediates_do_not_run/evera: CXX_EXECUTABLE_LINKER__evera_Debug CMakeFiles/evera.dir/main.cc.o CMakeFiles/evera.dir/my_application.cc.o CMakeFiles/evera.dir/flutter/generated_plugin_registrant.cc.o | plugins/file_selector_linux/libfile_selector_linux_plugin.so plugins/gtk/libgtk_plugin.so plugins/url_launcher_linux/liburl_launcher_linux_plugin.so /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/libflutter_linux_gtk.so /usr/lib/x86_64-linux-gnu/libgtk-3.so /usr/lib/x86_64-linux-gnu/libgdk-3.so /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so /usr/lib/x86_64-linux-gnu/libpango-1.0.so /usr/lib/x86_64-linux-gnu/libharfbuzz.so /usr/lib/x86_64-linux-gnu/libatk-1.0.so /usr/lib/x86_64-linux-gnu/libcairo-gobject.so /usr/lib/x86_64-linux-gnu/libcairo.so /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so /usr/lib/x86_64-linux-gnu/libgio-2.0.so /usr/lib/x86_64-linux-gnu/libgobject-2.0.so /usr/lib/x86_64-linux-gnu/libglib-2.0.so || flutter/flutter_assemble plugins/file_selector_linux/libfile_selector_linux_plugin.so plugins/gtk/libgtk_plugin.so plugins/url_launcher_linux/liburl_launcher_linux_plugin.so
+build intermediates_do_not_run/evera: CXX_EXECUTABLE_LINKER__evera_Debug CMakeFiles/evera.dir/main.cc.o CMakeFiles/evera.dir/my_application.cc.o CMakeFiles/evera.dir/flutter/generated_plugin_registrant.cc.o | plugins/file_selector_linux/libfile_selector_linux_plugin.so plugins/gtk/libgtk_plugin.so plugins/url_launcher_linux/liburl_launcher_linux_plugin.so /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/libflutter_linux_gtk.so /usr/lib/x86_64-linux-gnu/libgtk-3.so /usr/lib/x86_64-linux-gnu/libgdk-3.so /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so /usr/lib/x86_64-linux-gnu/libpango-1.0.so /usr/lib/x86_64-linux-gnu/libharfbuzz.so /usr/lib/x86_64-linux-gnu/libatk-1.0.so /usr/lib/x86_64-linux-gnu/libcairo-gobject.so /usr/lib/x86_64-linux-gnu/libcairo.so /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so /usr/lib/x86_64-linux-gnu/libgio-2.0.so /usr/lib/x86_64-linux-gnu/libgobject-2.0.so /usr/lib/x86_64-linux-gnu/libglib-2.0.so || flutter/flutter_assemble plugins/file_selector_linux/libfile_selector_linux_plugin.so plugins/gtk/libgtk_plugin.so plugins/url_launcher_linux/liburl_launcher_linux_plugin.so
   FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/file_selector_linux:/home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/gtk:/home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/url_launcher_linux:/home/karim/Desktop/md/projectt/linux/flutter/ephemeral:  plugins/file_selector_linux/libfile_selector_linux_plugin.so  plugins/gtk/libgtk_plugin.so  plugins/url_launcher_linux/liburl_launcher_linux_plugin.so  /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/libflutter_linux_gtk.so  /usr/lib/x86_64-linux-gnu/libgtk-3.so  /usr/lib/x86_64-linux-gnu/libgdk-3.so  /usr/lib/x86_64-linux-gnu/libz.so  /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so  /usr/lib/x86_64-linux-gnu/libpango-1.0.so  /usr/lib/x86_64-linux-gnu/libharfbuzz.so  /usr/lib/x86_64-linux-gnu/libatk-1.0.so  /usr/lib/x86_64-linux-gnu/libcairo-gobject.so  /usr/lib/x86_64-linux-gnu/libcairo.so  /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so  /usr/lib/x86_64-linux-gnu/libgio-2.0.so  /usr/lib/x86_64-linux-gnu/libgobject-2.0.so  /usr/lib/x86_64-linux-gnu/libglib-2.0.so
+  LINK_LIBRARIES = -Wl,-rpath,/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/file_selector_linux:/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/gtk:/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/url_launcher_linux:/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral:  plugins/file_selector_linux/libfile_selector_linux_plugin.so  plugins/gtk/libgtk_plugin.so  plugins/url_launcher_linux/liburl_launcher_linux_plugin.so  -lflutter_linux_gtk  /usr/lib/x86_64-linux-gnu/libgtk-3.so  /usr/lib/x86_64-linux-gnu/libgdk-3.so  /usr/lib/x86_64-linux-gnu/libz.so  /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so  /usr/lib/x86_64-linux-gnu/libpango-1.0.so  /usr/lib/x86_64-linux-gnu/libharfbuzz.so  /usr/lib/x86_64-linux-gnu/libatk-1.0.so  /usr/lib/x86_64-linux-gnu/libcairo-gobject.so  /usr/lib/x86_64-linux-gnu/libcairo.so  /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so  /usr/lib/x86_64-linux-gnu/libgio-2.0.so  /usr/lib/x86_64-linux-gnu/libgobject-2.0.so  /usr/lib/x86_64-linux-gnu/libglib-2.0.so
+  LINK_PATH = -L/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral
   OBJECT_DIR = CMakeFiles/evera.dir
   POST_BUILD = :
   PRE_LINK = :
+  TARGET_COMPILE_PDB = CMakeFiles/evera.dir/
   TARGET_FILE = intermediates_do_not_run/evera
-  TARGET_PDB = evera.dbg
+  TARGET_PDB = intermediates_do_not_run/evera.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -106,7 +114,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug && /usr/bin/cmake --regenerate-during-build -S/home/karim/Desktop/md/projectt/linux -B/home/karim/Desktop/md/projectt/build/linux/x64/debug
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug && /usr/bin/cmake --regenerate-during-build -S/home/karim/Documents/GitHub/EvEra/linux -B/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -124,7 +132,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug && /usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -136,7 +144,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -148,7 +156,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -157,21 +165,21 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/karim/Desktop/md/projectt/linux/CMakeLists.txt
+# /home/karim/Documents/GitHub/EvEra/linux/CMakeLists.txt
 # =============================================================================
 
 
 #############################################
 # Utility command for flutter_assemble
 
-build flutter/flutter_assemble: phony flutter/CMakeFiles/flutter_assemble /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/libflutter_linux_gtk.so /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_engine.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_method_call.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_method_response.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_value.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_view.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/flutter_linux.h flutter/_phony_
+build flutter/flutter_assemble: phony flutter/CMakeFiles/flutter_assemble /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/libflutter_linux_gtk.so /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_engine.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_method_call.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_method_response.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_value.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_view.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/flutter_linux.h flutter/_phony_
 
 
 #############################################
 # Utility command for edit_cache
 
 build flutter/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/flutter && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/flutter && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -182,7 +190,7 @@ build flutter/edit_cache: phony flutter/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build flutter/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/flutter && /usr/bin/cmake --regenerate-during-build -S/home/karim/Desktop/md/projectt/linux -B/home/karim/Desktop/md/projectt/build/linux/x64/debug
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/flutter && /usr/bin/cmake --regenerate-during-build -S/home/karim/Documents/GitHub/EvEra/linux -B/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -200,7 +208,7 @@ build flutter/list_install_components: phony
 # Utility command for install
 
 build flutter/CMakeFiles/install.util: CUSTOM_COMMAND flutter/all
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/flutter && /usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/flutter && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -212,7 +220,7 @@ build flutter/install: phony flutter/CMakeFiles/install.util
 # Utility command for install/local
 
 build flutter/CMakeFiles/install/local.util: CUSTOM_COMMAND flutter/all
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/flutter && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/flutter && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -224,7 +232,7 @@ build flutter/install/local: phony flutter/CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build flutter/CMakeFiles/install/strip.util: CUSTOM_COMMAND flutter/all
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/flutter && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/flutter && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -235,20 +243,20 @@ build flutter/install/strip: phony flutter/CMakeFiles/install/strip.util
 #############################################
 # Phony custom command for flutter/CMakeFiles/flutter_assemble
 
-build flutter/CMakeFiles/flutter_assemble | ${cmake_ninja_workdir}flutter/CMakeFiles/flutter_assemble: phony /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/libflutter_linux_gtk.so /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_engine.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_method_call.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_method_response.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_value.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_view.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/flutter_linux.h
+build flutter/CMakeFiles/flutter_assemble | ${cmake_ninja_workdir}flutter/CMakeFiles/flutter_assemble: phony /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/libflutter_linux_gtk.so /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_engine.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_method_call.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_method_response.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_value.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_view.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/flutter_linux.h
 
 
 #############################################
-# Custom command for /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/libflutter_linux_gtk.so
+# Custom command for /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/libflutter_linux_gtk.so
 
-build /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/libflutter_linux_gtk.so /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_engine.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_method_call.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_method_response.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_value.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_view.h /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/flutter_linux.h flutter/_phony_ | ${cmake_ninja_workdir}flutter/_phony_: CUSTOM_COMMAND
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/flutter && /usr/bin/cmake -E env "FLUTTER_ROOT=/home/karim/Documents/3Y/Mbile Dev/flutter" PROJECT_DIR=/home/karim/Desktop/md/projectt DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=/home/karim/Desktop/md/projectt/.dart_tool/package_config.json FLUTTER_TARGET=/home/karim/Desktop/md/projectt/lib/main.dart "/home/karim/Documents/3Y/Mbile Dev/flutter/packages/flutter_tools/bin/tool_backend.sh" linux-x64 Debug
-  DESC = Generating /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/libflutter_linux_gtk.so, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_engine.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_method_call.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_method_response.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_value.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/fl_view.h, /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/flutter_linux/flutter_linux.h, _phony_
+build /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/libflutter_linux_gtk.so /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_engine.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_method_call.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_method_response.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_value.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_view.h /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/flutter_linux.h flutter/_phony_ | ${cmake_ninja_workdir}flutter/_phony_: CUSTOM_COMMAND
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/flutter && /usr/bin/cmake -E env "FLUTTER_ROOT=/home/karim/Documents/3Y/Mbile Dev/flutter" PROJECT_DIR=/home/karim/Documents/GitHub/EvEra DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=/home/karim/Documents/GitHub/EvEra/.dart_tool/package_config.json FLUTTER_TARGET=/home/karim/Documents/GitHub/EvEra/lib/main.dart "/home/karim/Documents/3Y/Mbile Dev/flutter/packages/flutter_tools/bin/tool_backend.sh" linux-x64 Debug
+  DESC = Generating /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/libflutter_linux_gtk.so, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_basic_message_channel.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_binary_codec.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_binary_messenger.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_dart_project.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_engine.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_json_message_codec.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_json_method_codec.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_message_codec.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_method_call.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_method_channel.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_method_codec.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_method_response.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_plugin_registrar.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_plugin_registry.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_standard_message_codec.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_standard_method_codec.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_string_codec.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_value.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/fl_view.h, /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/flutter_linux/flutter_linux.h, _phony_
   restat = 1
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/karim/Desktop/md/projectt/linux/flutter/generated_plugins.cmake
+# /home/karim/Documents/GitHub/EvEra/linux/flutter/generated_plugins.cmake
 # =============================================================================
 
 # =============================================================================
@@ -260,21 +268,25 @@ build /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/libflutter_linux_g
 
 build cmake_object_order_depends_target_file_selector_linux_plugin: phony || flutter/flutter_assemble
 
-build plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir/file_selector_plugin.cc.o: CXX_COMPILER__file_selector_linux_plugin_unscanned_Debug /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/file_selector_plugin.cc || cmake_object_order_depends_target_file_selector_linux_plugin
+build plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir/file_selector_plugin.cc.o: CXX_COMPILER__file_selector_linux_plugin_unscanned_Debug /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/file_selector_plugin.cc || cmake_object_order_depends_target_file_selector_linux_plugin
   DEFINES = -DAPPLICATION_ID=\"com.example.evera\" -DFLUTTER_PLUGIN_IMPL -Dfile_selector_linux_plugin_EXPORTS
   DEP_FILE = plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir/file_selector_plugin.cc.o.d
   FLAGS = -g -fPIC -fvisibility=hidden -Wall -Werror -pthread
-  INCLUDES = -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral -isystem /usr/include/gtk-3.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/sysprof-6 -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cloudproviders -isystem /usr/include/atk-1.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include
+  INCLUDES = -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral -isystem /usr/include/gtk-3.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/sysprof-6 -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cloudproviders -isystem /usr/include/atk-1.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include
   OBJECT_DIR = plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir
   OBJECT_FILE_DIR = plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir
+  TARGET_COMPILE_PDB = plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir/
+  TARGET_PDB = plugins/file_selector_linux/libfile_selector_linux_plugin.pdb
 
-build plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir/messages.g.cc.o: CXX_COMPILER__file_selector_linux_plugin_unscanned_Debug /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/messages.g.cc || cmake_object_order_depends_target_file_selector_linux_plugin
+build plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir/messages.g.cc.o: CXX_COMPILER__file_selector_linux_plugin_unscanned_Debug /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/messages.g.cc || cmake_object_order_depends_target_file_selector_linux_plugin
   DEFINES = -DAPPLICATION_ID=\"com.example.evera\" -DFLUTTER_PLUGIN_IMPL -Dfile_selector_linux_plugin_EXPORTS
   DEP_FILE = plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir/messages.g.cc.o.d
   FLAGS = -g -fPIC -fvisibility=hidden -Wall -Werror -pthread
-  INCLUDES = -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral -isystem /usr/include/gtk-3.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/sysprof-6 -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cloudproviders -isystem /usr/include/atk-1.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include
+  INCLUDES = -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral -isystem /usr/include/gtk-3.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/sysprof-6 -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cloudproviders -isystem /usr/include/atk-1.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include
   OBJECT_DIR = plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir
   OBJECT_FILE_DIR = plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir
+  TARGET_COMPILE_PDB = plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir/
+  TARGET_PDB = plugins/file_selector_linux/libfile_selector_linux_plugin.pdb
 
 
 # =============================================================================
@@ -284,23 +296,25 @@ build plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir/mess
 #############################################
 # Link the shared library plugins/file_selector_linux/libfile_selector_linux_plugin.so
 
-build plugins/file_selector_linux/libfile_selector_linux_plugin.so: CXX_SHARED_LIBRARY_LINKER__file_selector_linux_plugin_Debug plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir/file_selector_plugin.cc.o plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir/messages.g.cc.o | /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/libflutter_linux_gtk.so /usr/lib/x86_64-linux-gnu/libgtk-3.so /usr/lib/x86_64-linux-gnu/libgdk-3.so /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so /usr/lib/x86_64-linux-gnu/libpango-1.0.so /usr/lib/x86_64-linux-gnu/libharfbuzz.so /usr/lib/x86_64-linux-gnu/libatk-1.0.so /usr/lib/x86_64-linux-gnu/libcairo-gobject.so /usr/lib/x86_64-linux-gnu/libcairo.so /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so /usr/lib/x86_64-linux-gnu/libgio-2.0.so /usr/lib/x86_64-linux-gnu/libgobject-2.0.so /usr/lib/x86_64-linux-gnu/libglib-2.0.so || flutter/flutter_assemble
+build plugins/file_selector_linux/libfile_selector_linux_plugin.so: CXX_SHARED_LIBRARY_LINKER__file_selector_linux_plugin_Debug plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir/file_selector_plugin.cc.o plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir/messages.g.cc.o | /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/libflutter_linux_gtk.so /usr/lib/x86_64-linux-gnu/libgtk-3.so /usr/lib/x86_64-linux-gnu/libgdk-3.so /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so /usr/lib/x86_64-linux-gnu/libpango-1.0.so /usr/lib/x86_64-linux-gnu/libharfbuzz.so /usr/lib/x86_64-linux-gnu/libatk-1.0.so /usr/lib/x86_64-linux-gnu/libcairo-gobject.so /usr/lib/x86_64-linux-gnu/libcairo.so /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so /usr/lib/x86_64-linux-gnu/libgio-2.0.so /usr/lib/x86_64-linux-gnu/libgobject-2.0.so /usr/lib/x86_64-linux-gnu/libglib-2.0.so || flutter/flutter_assemble
   LANGUAGE_COMPILE_FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/karim/Desktop/md/projectt/linux/flutter/ephemeral  /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/libflutter_linux_gtk.so  /usr/lib/x86_64-linux-gnu/libgtk-3.so  /usr/lib/x86_64-linux-gnu/libgdk-3.so  /usr/lib/x86_64-linux-gnu/libz.so  /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so  /usr/lib/x86_64-linux-gnu/libpango-1.0.so  /usr/lib/x86_64-linux-gnu/libharfbuzz.so  /usr/lib/x86_64-linux-gnu/libatk-1.0.so  /usr/lib/x86_64-linux-gnu/libcairo-gobject.so  /usr/lib/x86_64-linux-gnu/libcairo.so  /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so  /usr/lib/x86_64-linux-gnu/libgio-2.0.so  /usr/lib/x86_64-linux-gnu/libgobject-2.0.so  /usr/lib/x86_64-linux-gnu/libglib-2.0.so
+  LINK_LIBRARIES = -Wl,-rpath,/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral  -lflutter_linux_gtk  /usr/lib/x86_64-linux-gnu/libgtk-3.so  /usr/lib/x86_64-linux-gnu/libgdk-3.so  /usr/lib/x86_64-linux-gnu/libz.so  /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so  /usr/lib/x86_64-linux-gnu/libpango-1.0.so  /usr/lib/x86_64-linux-gnu/libharfbuzz.so  /usr/lib/x86_64-linux-gnu/libatk-1.0.so  /usr/lib/x86_64-linux-gnu/libcairo-gobject.so  /usr/lib/x86_64-linux-gnu/libcairo.so  /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so  /usr/lib/x86_64-linux-gnu/libgio-2.0.so  /usr/lib/x86_64-linux-gnu/libgobject-2.0.so  /usr/lib/x86_64-linux-gnu/libglib-2.0.so
+  LINK_PATH = -L/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral
   OBJECT_DIR = plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir
   POST_BUILD = :
   PRE_LINK = :
   SONAME = libfile_selector_linux_plugin.so
   SONAME_FLAG = -Wl,-soname,
+  TARGET_COMPILE_PDB = plugins/file_selector_linux/CMakeFiles/file_selector_linux_plugin.dir/
   TARGET_FILE = plugins/file_selector_linux/libfile_selector_linux_plugin.so
-  TARGET_PDB = file_selector_linux_plugin.so.dbg
+  TARGET_PDB = plugins/file_selector_linux/libfile_selector_linux_plugin.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build plugins/file_selector_linux/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/file_selector_linux && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/file_selector_linux && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -311,7 +325,7 @@ build plugins/file_selector_linux/edit_cache: phony plugins/file_selector_linux/
 # Utility command for rebuild_cache
 
 build plugins/file_selector_linux/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/file_selector_linux && /usr/bin/cmake --regenerate-during-build -S/home/karim/Desktop/md/projectt/linux -B/home/karim/Desktop/md/projectt/build/linux/x64/debug
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/file_selector_linux && /usr/bin/cmake --regenerate-during-build -S/home/karim/Documents/GitHub/EvEra/linux -B/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -329,7 +343,7 @@ build plugins/file_selector_linux/list_install_components: phony
 # Utility command for install
 
 build plugins/file_selector_linux/CMakeFiles/install.util: CUSTOM_COMMAND plugins/file_selector_linux/all
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/file_selector_linux && /usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/file_selector_linux && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -341,7 +355,7 @@ build plugins/file_selector_linux/install: phony plugins/file_selector_linux/CMa
 # Utility command for install/local
 
 build plugins/file_selector_linux/CMakeFiles/install/local.util: CUSTOM_COMMAND plugins/file_selector_linux/all
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/file_selector_linux && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/file_selector_linux && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -353,7 +367,7 @@ build plugins/file_selector_linux/install/local: phony plugins/file_selector_lin
 # Utility command for install/strip
 
 build plugins/file_selector_linux/CMakeFiles/install/strip.util: CUSTOM_COMMAND plugins/file_selector_linux/all
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/file_selector_linux && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/file_selector_linux && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -362,7 +376,7 @@ build plugins/file_selector_linux/install/strip: phony plugins/file_selector_lin
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/karim/Desktop/md/projectt/linux/flutter/generated_plugins.cmake
+# /home/karim/Documents/GitHub/EvEra/linux/flutter/generated_plugins.cmake
 # =============================================================================
 
 # =============================================================================
@@ -374,13 +388,15 @@ build plugins/file_selector_linux/install/strip: phony plugins/file_selector_lin
 
 build cmake_object_order_depends_target_gtk_plugin: phony || flutter/flutter_assemble
 
-build plugins/gtk/CMakeFiles/gtk_plugin.dir/gtk_plugin.cc.o: CXX_COMPILER__gtk_plugin_unscanned_Debug /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/gtk/linux/gtk_plugin.cc || cmake_object_order_depends_target_gtk_plugin
+build plugins/gtk/CMakeFiles/gtk_plugin.dir/gtk_plugin.cc.o: CXX_COMPILER__gtk_plugin_unscanned_Debug /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/gtk/linux/gtk_plugin.cc || cmake_object_order_depends_target_gtk_plugin
   DEFINES = -DAPPLICATION_ID=\"com.example.evera\" -DFLUTTER_PLUGIN_IMPL -Dgtk_plugin_EXPORTS
   DEP_FILE = plugins/gtk/CMakeFiles/gtk_plugin.dir/gtk_plugin.cc.o.d
   FLAGS = -g -fPIC -fvisibility=hidden -Wall -Werror -pthread
-  INCLUDES = -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral -isystem /usr/include/gtk-3.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/sysprof-6 -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cloudproviders -isystem /usr/include/atk-1.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include
+  INCLUDES = -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral -isystem /usr/include/gtk-3.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/sysprof-6 -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cloudproviders -isystem /usr/include/atk-1.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include
   OBJECT_DIR = plugins/gtk/CMakeFiles/gtk_plugin.dir
   OBJECT_FILE_DIR = plugins/gtk/CMakeFiles/gtk_plugin.dir
+  TARGET_COMPILE_PDB = plugins/gtk/CMakeFiles/gtk_plugin.dir/
+  TARGET_PDB = plugins/gtk/libgtk_plugin.pdb
 
 
 # =============================================================================
@@ -390,23 +406,25 @@ build plugins/gtk/CMakeFiles/gtk_plugin.dir/gtk_plugin.cc.o: CXX_COMPILER__gtk_p
 #############################################
 # Link the shared library plugins/gtk/libgtk_plugin.so
 
-build plugins/gtk/libgtk_plugin.so: CXX_SHARED_LIBRARY_LINKER__gtk_plugin_Debug plugins/gtk/CMakeFiles/gtk_plugin.dir/gtk_plugin.cc.o | /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/libflutter_linux_gtk.so /usr/lib/x86_64-linux-gnu/libgtk-3.so /usr/lib/x86_64-linux-gnu/libgdk-3.so /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so /usr/lib/x86_64-linux-gnu/libpango-1.0.so /usr/lib/x86_64-linux-gnu/libharfbuzz.so /usr/lib/x86_64-linux-gnu/libatk-1.0.so /usr/lib/x86_64-linux-gnu/libcairo-gobject.so /usr/lib/x86_64-linux-gnu/libcairo.so /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so /usr/lib/x86_64-linux-gnu/libgio-2.0.so /usr/lib/x86_64-linux-gnu/libgobject-2.0.so /usr/lib/x86_64-linux-gnu/libglib-2.0.so || flutter/flutter_assemble
+build plugins/gtk/libgtk_plugin.so: CXX_SHARED_LIBRARY_LINKER__gtk_plugin_Debug plugins/gtk/CMakeFiles/gtk_plugin.dir/gtk_plugin.cc.o | /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/libflutter_linux_gtk.so /usr/lib/x86_64-linux-gnu/libgtk-3.so /usr/lib/x86_64-linux-gnu/libgdk-3.so /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so /usr/lib/x86_64-linux-gnu/libpango-1.0.so /usr/lib/x86_64-linux-gnu/libharfbuzz.so /usr/lib/x86_64-linux-gnu/libatk-1.0.so /usr/lib/x86_64-linux-gnu/libcairo-gobject.so /usr/lib/x86_64-linux-gnu/libcairo.so /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so /usr/lib/x86_64-linux-gnu/libgio-2.0.so /usr/lib/x86_64-linux-gnu/libgobject-2.0.so /usr/lib/x86_64-linux-gnu/libglib-2.0.so || flutter/flutter_assemble
   LANGUAGE_COMPILE_FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/karim/Desktop/md/projectt/linux/flutter/ephemeral  /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/libflutter_linux_gtk.so  /usr/lib/x86_64-linux-gnu/libgtk-3.so  /usr/lib/x86_64-linux-gnu/libgdk-3.so  /usr/lib/x86_64-linux-gnu/libz.so  /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so  /usr/lib/x86_64-linux-gnu/libpango-1.0.so  /usr/lib/x86_64-linux-gnu/libharfbuzz.so  /usr/lib/x86_64-linux-gnu/libatk-1.0.so  /usr/lib/x86_64-linux-gnu/libcairo-gobject.so  /usr/lib/x86_64-linux-gnu/libcairo.so  /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so  /usr/lib/x86_64-linux-gnu/libgio-2.0.so  /usr/lib/x86_64-linux-gnu/libgobject-2.0.so  /usr/lib/x86_64-linux-gnu/libglib-2.0.so
+  LINK_LIBRARIES = -Wl,-rpath,/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral  -lflutter_linux_gtk  /usr/lib/x86_64-linux-gnu/libgtk-3.so  /usr/lib/x86_64-linux-gnu/libgdk-3.so  /usr/lib/x86_64-linux-gnu/libz.so  /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so  /usr/lib/x86_64-linux-gnu/libpango-1.0.so  /usr/lib/x86_64-linux-gnu/libharfbuzz.so  /usr/lib/x86_64-linux-gnu/libatk-1.0.so  /usr/lib/x86_64-linux-gnu/libcairo-gobject.so  /usr/lib/x86_64-linux-gnu/libcairo.so  /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so  /usr/lib/x86_64-linux-gnu/libgio-2.0.so  /usr/lib/x86_64-linux-gnu/libgobject-2.0.so  /usr/lib/x86_64-linux-gnu/libglib-2.0.so
+  LINK_PATH = -L/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral
   OBJECT_DIR = plugins/gtk/CMakeFiles/gtk_plugin.dir
   POST_BUILD = :
   PRE_LINK = :
   SONAME = libgtk_plugin.so
   SONAME_FLAG = -Wl,-soname,
+  TARGET_COMPILE_PDB = plugins/gtk/CMakeFiles/gtk_plugin.dir/
   TARGET_FILE = plugins/gtk/libgtk_plugin.so
-  TARGET_PDB = gtk_plugin.so.dbg
+  TARGET_PDB = plugins/gtk/libgtk_plugin.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build plugins/gtk/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/gtk && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/gtk && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -417,7 +435,7 @@ build plugins/gtk/edit_cache: phony plugins/gtk/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build plugins/gtk/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/gtk && /usr/bin/cmake --regenerate-during-build -S/home/karim/Desktop/md/projectt/linux -B/home/karim/Desktop/md/projectt/build/linux/x64/debug
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/gtk && /usr/bin/cmake --regenerate-during-build -S/home/karim/Documents/GitHub/EvEra/linux -B/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -435,7 +453,7 @@ build plugins/gtk/list_install_components: phony
 # Utility command for install
 
 build plugins/gtk/CMakeFiles/install.util: CUSTOM_COMMAND plugins/gtk/all
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/gtk && /usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/gtk && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -447,7 +465,7 @@ build plugins/gtk/install: phony plugins/gtk/CMakeFiles/install.util
 # Utility command for install/local
 
 build plugins/gtk/CMakeFiles/install/local.util: CUSTOM_COMMAND plugins/gtk/all
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/gtk && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/gtk && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -459,7 +477,7 @@ build plugins/gtk/install/local: phony plugins/gtk/CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build plugins/gtk/CMakeFiles/install/strip.util: CUSTOM_COMMAND plugins/gtk/all
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/gtk && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/gtk && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -468,7 +486,7 @@ build plugins/gtk/install/strip: phony plugins/gtk/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# /home/karim/Desktop/md/projectt/linux/flutter/generated_plugins.cmake
+# /home/karim/Documents/GitHub/EvEra/linux/flutter/generated_plugins.cmake
 # =============================================================================
 
 # =============================================================================
@@ -480,21 +498,25 @@ build plugins/gtk/install/strip: phony plugins/gtk/CMakeFiles/install/strip.util
 
 build cmake_object_order_depends_target_url_launcher_linux_plugin: phony || flutter/flutter_assemble
 
-build plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/messages.g.cc.o: CXX_COMPILER__url_launcher_linux_plugin_unscanned_Debug /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/messages.g.cc || cmake_object_order_depends_target_url_launcher_linux_plugin
+build plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/messages.g.cc.o: CXX_COMPILER__url_launcher_linux_plugin_unscanned_Debug /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/messages.g.cc || cmake_object_order_depends_target_url_launcher_linux_plugin
   DEFINES = -DAPPLICATION_ID=\"com.example.evera\" -DFLUTTER_PLUGIN_IMPL -Durl_launcher_linux_plugin_EXPORTS
   DEP_FILE = plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/messages.g.cc.o.d
   FLAGS = -g -fPIC -fvisibility=hidden -Wall -Werror -pthread
-  INCLUDES = -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral -isystem /usr/include/gtk-3.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/sysprof-6 -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cloudproviders -isystem /usr/include/atk-1.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include
+  INCLUDES = -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral -isystem /usr/include/gtk-3.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/sysprof-6 -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cloudproviders -isystem /usr/include/atk-1.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include
   OBJECT_DIR = plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir
   OBJECT_FILE_DIR = plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir
+  TARGET_COMPILE_PDB = plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/
+  TARGET_PDB = plugins/url_launcher_linux/liburl_launcher_linux_plugin.pdb
 
-build plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/url_launcher_plugin.cc.o: CXX_COMPILER__url_launcher_linux_plugin_unscanned_Debug /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/url_launcher_plugin.cc || cmake_object_order_depends_target_url_launcher_linux_plugin
+build plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/url_launcher_plugin.cc.o: CXX_COMPILER__url_launcher_linux_plugin_unscanned_Debug /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/url_launcher_plugin.cc || cmake_object_order_depends_target_url_launcher_linux_plugin
   DEFINES = -DAPPLICATION_ID=\"com.example.evera\" -DFLUTTER_PLUGIN_IMPL -Durl_launcher_linux_plugin_EXPORTS
   DEP_FILE = plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/url_launcher_plugin.cc.o.d
   FLAGS = -g -fPIC -fvisibility=hidden -Wall -Werror -pthread
-  INCLUDES = -I/home/karim/Desktop/md/projectt/linux/flutter/ephemeral -isystem /usr/include/gtk-3.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/sysprof-6 -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cloudproviders -isystem /usr/include/atk-1.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include
+  INCLUDES = -I/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral -isystem /usr/include/gtk-3.0 -isystem /usr/include/pango-1.0 -isystem /usr/include/glib-2.0 -isystem /usr/lib/x86_64-linux-gnu/glib-2.0/include -isystem /usr/include/sysprof-6 -isystem /usr/include/harfbuzz -isystem /usr/include/freetype2 -isystem /usr/include/libpng16 -isystem /usr/include/libmount -isystem /usr/include/blkid -isystem /usr/include/fribidi -isystem /usr/include/cairo -isystem /usr/include/pixman-1 -isystem /usr/include/gdk-pixbuf-2.0 -isystem /usr/include/webp -isystem /usr/include/gio-unix-2.0 -isystem /usr/include/cloudproviders -isystem /usr/include/atk-1.0 -isystem /usr/include/at-spi2-atk/2.0 -isystem /usr/include/at-spi-2.0 -isystem /usr/include/dbus-1.0 -isystem /usr/lib/x86_64-linux-gnu/dbus-1.0/include
   OBJECT_DIR = plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir
   OBJECT_FILE_DIR = plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir
+  TARGET_COMPILE_PDB = plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/
+  TARGET_PDB = plugins/url_launcher_linux/liburl_launcher_linux_plugin.pdb
 
 
 # =============================================================================
@@ -504,23 +526,25 @@ build plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/url_la
 #############################################
 # Link the shared library plugins/url_launcher_linux/liburl_launcher_linux_plugin.so
 
-build plugins/url_launcher_linux/liburl_launcher_linux_plugin.so: CXX_SHARED_LIBRARY_LINKER__url_launcher_linux_plugin_Debug plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/messages.g.cc.o plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/url_launcher_plugin.cc.o | /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/libflutter_linux_gtk.so /usr/lib/x86_64-linux-gnu/libgtk-3.so /usr/lib/x86_64-linux-gnu/libgdk-3.so /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so /usr/lib/x86_64-linux-gnu/libpango-1.0.so /usr/lib/x86_64-linux-gnu/libharfbuzz.so /usr/lib/x86_64-linux-gnu/libatk-1.0.so /usr/lib/x86_64-linux-gnu/libcairo-gobject.so /usr/lib/x86_64-linux-gnu/libcairo.so /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so /usr/lib/x86_64-linux-gnu/libgio-2.0.so /usr/lib/x86_64-linux-gnu/libgobject-2.0.so /usr/lib/x86_64-linux-gnu/libglib-2.0.so || flutter/flutter_assemble
+build plugins/url_launcher_linux/liburl_launcher_linux_plugin.so: CXX_SHARED_LIBRARY_LINKER__url_launcher_linux_plugin_Debug plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/messages.g.cc.o plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/url_launcher_plugin.cc.o | /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/libflutter_linux_gtk.so /usr/lib/x86_64-linux-gnu/libgtk-3.so /usr/lib/x86_64-linux-gnu/libgdk-3.so /usr/lib/x86_64-linux-gnu/libz.so /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so /usr/lib/x86_64-linux-gnu/libpango-1.0.so /usr/lib/x86_64-linux-gnu/libharfbuzz.so /usr/lib/x86_64-linux-gnu/libatk-1.0.so /usr/lib/x86_64-linux-gnu/libcairo-gobject.so /usr/lib/x86_64-linux-gnu/libcairo.so /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so /usr/lib/x86_64-linux-gnu/libgio-2.0.so /usr/lib/x86_64-linux-gnu/libgobject-2.0.so /usr/lib/x86_64-linux-gnu/libglib-2.0.so || flutter/flutter_assemble
   LANGUAGE_COMPILE_FLAGS = -g
-  LINK_LIBRARIES = -Wl,-rpath,/home/karim/Desktop/md/projectt/linux/flutter/ephemeral  /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/libflutter_linux_gtk.so  /usr/lib/x86_64-linux-gnu/libgtk-3.so  /usr/lib/x86_64-linux-gnu/libgdk-3.so  /usr/lib/x86_64-linux-gnu/libz.so  /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so  /usr/lib/x86_64-linux-gnu/libpango-1.0.so  /usr/lib/x86_64-linux-gnu/libharfbuzz.so  /usr/lib/x86_64-linux-gnu/libatk-1.0.so  /usr/lib/x86_64-linux-gnu/libcairo-gobject.so  /usr/lib/x86_64-linux-gnu/libcairo.so  /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so  /usr/lib/x86_64-linux-gnu/libgio-2.0.so  /usr/lib/x86_64-linux-gnu/libgobject-2.0.so  /usr/lib/x86_64-linux-gnu/libglib-2.0.so
+  LINK_LIBRARIES = -Wl,-rpath,/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral  -lflutter_linux_gtk  /usr/lib/x86_64-linux-gnu/libgtk-3.so  /usr/lib/x86_64-linux-gnu/libgdk-3.so  /usr/lib/x86_64-linux-gnu/libz.so  /usr/lib/x86_64-linux-gnu/libpangocairo-1.0.so  /usr/lib/x86_64-linux-gnu/libpango-1.0.so  /usr/lib/x86_64-linux-gnu/libharfbuzz.so  /usr/lib/x86_64-linux-gnu/libatk-1.0.so  /usr/lib/x86_64-linux-gnu/libcairo-gobject.so  /usr/lib/x86_64-linux-gnu/libcairo.so  /usr/lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so  /usr/lib/x86_64-linux-gnu/libgio-2.0.so  /usr/lib/x86_64-linux-gnu/libgobject-2.0.so  /usr/lib/x86_64-linux-gnu/libglib-2.0.so
+  LINK_PATH = -L/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral
   OBJECT_DIR = plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir
   POST_BUILD = :
   PRE_LINK = :
   SONAME = liburl_launcher_linux_plugin.so
   SONAME_FLAG = -Wl,-soname,
+  TARGET_COMPILE_PDB = plugins/url_launcher_linux/CMakeFiles/url_launcher_linux_plugin.dir/
   TARGET_FILE = plugins/url_launcher_linux/liburl_launcher_linux_plugin.so
-  TARGET_PDB = url_launcher_linux_plugin.so.dbg
+  TARGET_PDB = plugins/url_launcher_linux/liburl_launcher_linux_plugin.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build plugins/url_launcher_linux/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/url_launcher_linux && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/url_launcher_linux && /usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -531,7 +555,7 @@ build plugins/url_launcher_linux/edit_cache: phony plugins/url_launcher_linux/CM
 # Utility command for rebuild_cache
 
 build plugins/url_launcher_linux/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/url_launcher_linux && /usr/bin/cmake --regenerate-during-build -S/home/karim/Desktop/md/projectt/linux -B/home/karim/Desktop/md/projectt/build/linux/x64/debug
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/url_launcher_linux && /usr/bin/cmake --regenerate-during-build -S/home/karim/Documents/GitHub/EvEra/linux -B/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -549,7 +573,7 @@ build plugins/url_launcher_linux/list_install_components: phony
 # Utility command for install
 
 build plugins/url_launcher_linux/CMakeFiles/install.util: CUSTOM_COMMAND plugins/url_launcher_linux/all
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/url_launcher_linux && /usr/bin/cmake -P cmake_install.cmake
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/url_launcher_linux && /usr/bin/cmake -P cmake_install.cmake
   DESC = Install the project...
   pool = console
   restat = 1
@@ -561,7 +585,7 @@ build plugins/url_launcher_linux/install: phony plugins/url_launcher_linux/CMake
 # Utility command for install/local
 
 build plugins/url_launcher_linux/CMakeFiles/install/local.util: CUSTOM_COMMAND plugins/url_launcher_linux/all
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/url_launcher_linux && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/url_launcher_linux && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -573,7 +597,7 @@ build plugins/url_launcher_linux/install/local: phony plugins/url_launcher_linux
 # Utility command for install/strip
 
 build plugins/url_launcher_linux/CMakeFiles/install/strip.util: CUSTOM_COMMAND plugins/url_launcher_linux/all
-  COMMAND = cd /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/url_launcher_linux && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  COMMAND = cd /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/url_launcher_linux && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -605,35 +629,35 @@ build url_launcher_linux_plugin: phony plugins/url_launcher_linux/liburl_launche
 # =============================================================================
 
 #############################################
-# Folder: /home/karim/Desktop/md/projectt/build/linux/x64/debug
+# Folder: /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug
 
 build all: phony intermediates_do_not_run/evera flutter/all plugins/file_selector_linux/all plugins/gtk/all plugins/url_launcher_linux/all
 
 # =============================================================================
 
 #############################################
-# Folder: /home/karim/Desktop/md/projectt/build/linux/x64/debug/flutter
+# Folder: /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/flutter
 
 build flutter/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/file_selector_linux
+# Folder: /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/file_selector_linux
 
 build plugins/file_selector_linux/all: phony plugins/file_selector_linux/libfile_selector_linux_plugin.so
 
 # =============================================================================
 
 #############################################
-# Folder: /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/gtk
+# Folder: /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/gtk
 
 build plugins/gtk/all: phony plugins/gtk/libgtk_plugin.so
 
 # =============================================================================
 
 #############################################
-# Folder: /home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/url_launcher_linux
+# Folder: /home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/url_launcher_linux
 
 build plugins/url_launcher_linux/all: phony plugins/url_launcher_linux/liburl_launcher_linux_plugin.so
 
@@ -644,14 +668,14 @@ build plugins/url_launcher_linux/all: phony plugins/url_launcher_linux/liburl_la
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /home/karim/Desktop/md/projectt/linux/CMakeLists.txt /home/karim/Desktop/md/projectt/linux/flutter/CMakeLists.txt /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/CMakeLists.txt /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/gtk/linux/CMakeLists.txt /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/CMakeLists.txt /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/generated_config.cmake /home/karim/Desktop/md/projectt/linux/flutter/generated_plugins.cmake /usr/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.30/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.30/Modules/Compiler/Clang.cmake /usr/share/cmake-3.30/Modules/Compiler/GNU.cmake /usr/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.30/Modules/FindPackageMessage.cmake /usr/share/cmake-3.30/Modules/FindPkgConfig.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake-3.30/Modules/Platform/Linux.cmake /usr/share/cmake-3.30/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /home/karim/Documents/GitHub/EvEra/linux/CMakeLists.txt /home/karim/Documents/GitHub/EvEra/linux/flutter/CMakeLists.txt /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/CMakeLists.txt /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/gtk/linux/CMakeLists.txt /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/CMakeLists.txt /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/generated_config.cmake /home/karim/Documents/GitHub/EvEra/linux/flutter/generated_plugins.cmake /usr/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.30/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.30/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.30/Modules/CMakeDetermineCompilerSupport.cmake /usr/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.30/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.30/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake-3.30/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.30/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.30/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake-3.30/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.30/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.30/Modules/Compiler/Clang-CXX-CXXImportStd.cmake /usr/share/cmake-3.30/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.30/Modules/Compiler/Clang-FindBinUtils.cmake /usr/share/cmake-3.30/Modules/Compiler/Clang.cmake /usr/share/cmake-3.30/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/GNU.cmake /usr/share/cmake-3.30/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.30/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.30/Modules/FindPackageMessage.cmake /usr/share/cmake-3.30/Modules/FindPkgConfig.cmake /usr/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake-3.30/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake-3.30/Modules/Platform/Linux.cmake /usr/share/cmake-3.30/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/karim/Desktop/md/projectt/linux/CMakeLists.txt /home/karim/Desktop/md/projectt/linux/flutter/CMakeLists.txt /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/CMakeLists.txt /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/gtk/linux/CMakeLists.txt /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/CMakeLists.txt /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/generated_config.cmake /home/karim/Desktop/md/projectt/linux/flutter/generated_plugins.cmake /usr/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.30/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.30/Modules/Compiler/Clang.cmake /usr/share/cmake-3.30/Modules/Compiler/GNU.cmake /usr/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.30/Modules/FindPackageMessage.cmake /usr/share/cmake-3.30/Modules/FindPkgConfig.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake-3.30/Modules/Platform/Linux.cmake /usr/share/cmake-3.30/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
+build /home/karim/Documents/GitHub/EvEra/linux/CMakeLists.txt /home/karim/Documents/GitHub/EvEra/linux/flutter/CMakeLists.txt /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/file_selector_linux/linux/CMakeLists.txt /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/gtk/linux/CMakeLists.txt /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/url_launcher_linux/linux/CMakeLists.txt /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/generated_config.cmake /home/karim/Documents/GitHub/EvEra/linux/flutter/generated_plugins.cmake /usr/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in /usr/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp /usr/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /usr/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-3.30/Modules/CMakeCompilerIdDetection.cmake /usr/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake /usr/share/cmake-3.30/Modules/CMakeDetermineCompiler.cmake /usr/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake /usr/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake /usr/share/cmake-3.30/Modules/CMakeDetermineCompilerSupport.cmake /usr/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake /usr/share/cmake-3.30/Modules/CMakeFindBinUtils.cmake /usr/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /usr/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-3.30/Modules/CMakeNinjaFindMake.cmake /usr/share/cmake-3.30/Modules/CMakeParseImplicitIncludeInfo.cmake /usr/share/cmake-3.30/Modules/CMakeParseImplicitLinkInfo.cmake /usr/share/cmake-3.30/Modules/CMakeParseLibraryArchitecture.cmake /usr/share/cmake-3.30/Modules/CMakeSystem.cmake.in /usr/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake /usr/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake /usr/share/cmake-3.30/Modules/Compiler/ADSP-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/ARMCC-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/ARMClang-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/AppleClang-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/Borland-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-3.30/Modules/Compiler/Clang-CXX-CXXImportStd.cmake /usr/share/cmake-3.30/Modules/Compiler/Clang-CXX.cmake /usr/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /usr/share/cmake-3.30/Modules/Compiler/Clang-FindBinUtils.cmake /usr/share/cmake-3.30/Modules/Compiler/Clang.cmake /usr/share/cmake-3.30/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/Cray-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/CrayClang-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/GHS-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/GNU.cmake /usr/share/cmake-3.30/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/IAR-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /usr/share/cmake-3.30/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/Intel-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/MSVC-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/NVHPC-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/OrangeC-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/PGI-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/PathScale-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/SCO-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/TI-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/TIClang-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/Tasking-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/Watcom-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /usr/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-3.30/Modules/FindPackageMessage.cmake /usr/share/cmake-3.30/Modules/FindPkgConfig.cmake /usr/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake /usr/share/cmake-3.30/Modules/Internal/FeatureTesting.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-Clang-CXX.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-Determine-CXX.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-3.30/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake-3.30/Modules/Platform/Linux.cmake /usr/share/cmake-3.30/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
 
 
 #############################################

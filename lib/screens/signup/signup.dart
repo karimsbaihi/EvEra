@@ -1,8 +1,7 @@
 import 'package:evera/styles/colors.dart';
 import 'package:evera/components/goBack.dart';
 import 'package:flutter/material.dart';
-
-
+import 'package:evera/authentification/auth_service.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
@@ -12,11 +11,14 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
-
-
+  // get auth service
+  final authService = AuthService();
   final formKey = GlobalKey<FormState>();
-  String password='';
 
+  //text controllers
+  final _emailController = TextEditingController();
+  final _passwordController = TextEditingController();
+  final _confirmpasswordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -40,7 +42,10 @@ class _SignUpState extends State<SignUp> {
             children: [
               const Padding(
                 padding: EdgeInsets.fromLTRB(15, 33, 15, 70),
-                child: Text("Set Up Your Password",style: TextStyle(fontSize: 38,color: Colors.white),),
+                child: Text(
+                  "Set Up Your Password",
+                  style: TextStyle(fontSize: 38, color: Colors.white),
+                ),
               ),
               Form(
                 key: formKey,
@@ -49,11 +54,12 @@ class _SignUpState extends State<SignUp> {
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 15),
                       child: TextFormField(
-                        onChanged: (value){
-                          password=value;
+                        controller: _passwordController,
+                        onChanged: (value) {
+                          // password=value;
                         },
-                        validator: (value){
-                          if(value == null || value == ''){
+                        validator: (value) {
+                          if (value == null || value == '') {
                             return 'Please enter a password';
                           }
                           return null;
@@ -67,25 +73,25 @@ class _SignUpState extends State<SignUp> {
                         cursorColor: mainGreen,
                         decoration: InputDecoration(
                           hintText: "Password",
-                          hintStyle: TextStyle(fontSize: 16,color: inputHint),
+                          hintStyle: TextStyle(fontSize: 16, color: inputHint),
                           filled: true,
                           fillColor: secondBlack,
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(40),
-                              borderSide: BorderSide.none
-                          ),
+                              borderSide: BorderSide.none),
                           focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(40),
-                              borderSide: BorderSide(color: mainGreen,width: 1.5)
-                          ),
-                          contentPadding: const EdgeInsets.symmetric(horizontal: 30,vertical: 20),
+                              borderSide:
+                                  BorderSide(color: mainGreen, width: 1.5)),
+                          contentPadding: const EdgeInsets.symmetric(
+                              horizontal: 30, vertical: 20),
                         ),
-
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 15),
                       child: TextFormField(
+                        controller: _confirmpasswordController,
                         onTapOutside: (PointerDownEvent event) {
                           // Remove focus when tapped outside
                           FocusScope.of(context).unfocus();
@@ -93,37 +99,36 @@ class _SignUpState extends State<SignUp> {
                         style: const TextStyle(color: Color(0xffB3B3B3)),
                         cursorColor: mainGreen,
                         obscureText: true,
-                          validator: (value){
-                            if(value == null || value == ''){
-                              return 'Please confirm the password';
-                            }
-                            if(value!=password){
-                              return 'Passwords does not match';
-                            }
-                            return null;
-                          },
+                        validator: (value) {
+                          if (value == null || value == '') {
+                            return 'Please confirm the password';
+                          }
+                          if (value != password) {
+                            return 'Passwords does not match';
+                          }
+                          return null;
+                        },
                         decoration: InputDecoration(
                           hintText: "Confirm Password",
-                          hintStyle: TextStyle(fontSize: 16,color: inputHint),
+                          hintStyle: TextStyle(fontSize: 16, color: inputHint),
                           filled: true,
                           fillColor: secondBlack,
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(40),
-                              borderSide: BorderSide.none
-                          ),
+                              borderSide: BorderSide.none),
                           focusedBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(40),
-                              borderSide: BorderSide(color: mainGreen,width: 1.5)
-                          ),
-                          contentPadding: const EdgeInsets.symmetric(horizontal: 30,vertical: 20),
+                              borderSide:
+                                  BorderSide(color: mainGreen, width: 1.5)),
+                          contentPadding: const EdgeInsets.symmetric(
+                              horizontal: 30, vertical: 20),
                         ),
-
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 15),
                       child: GestureDetector(
-                        onTap: (){
+                        onTap: () {
                           if (formKey.currentState!.validate()) {
                             formKey.currentState!.save();
                             Navigator.pushNamed(context, '/choosePref');
@@ -139,7 +144,8 @@ class _SignUpState extends State<SignUp> {
                           child: const Center(
                             child: Text(
                               "Continue",
-                              style: TextStyle(fontSize: 24,color: Colors.white),
+                              style:
+                                  TextStyle(fontSize: 24, color: Colors.white),
                             ),
                           ),
                         ),

@@ -1,8 +1,8 @@
-# Install script for directory: /home/karim/Desktop/md/projectt/linux
+# Install script for directory: /home/karim/Documents/GitHub/EvEra/linux
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle")
+  set(CMAKE_INSTALL_PREFIX "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,134 +44,134 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   
-  file(REMOVE_RECURSE "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/")
+  file(REMOVE_RECURSE "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/")
   
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/evera" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/evera")
+  if(EXISTS "$ENV{DESTDIR}/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/evera" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/evera")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/evera"
+         FILE "$ENV{DESTDIR}/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/evera"
          RPATH "$ORIGIN/lib")
   endif()
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/evera")
+   "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/evera")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle" TYPE EXECUTABLE FILES "/home/karim/Desktop/md/projectt/build/linux/x64/debug/intermediates_do_not_run/evera")
-  if(EXISTS "$ENV{DESTDIR}/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/evera" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/evera")
+  file(INSTALL DESTINATION "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle" TYPE EXECUTABLE FILES "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/intermediates_do_not_run/evera")
+  if(EXISTS "$ENV{DESTDIR}/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/evera" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/evera")
     file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/evera"
-         OLD_RPATH "/home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/file_selector_linux:/home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/gtk:/home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/url_launcher_linux:/home/karim/Desktop/md/projectt/linux/flutter/ephemeral:"
+         FILE "$ENV{DESTDIR}/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/evera"
+         OLD_RPATH "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/file_selector_linux:/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/gtk:/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/url_launcher_linux:/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral:"
          NEW_RPATH "$ORIGIN/lib")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/evera")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/evera")
     endif()
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/data/icudtl.dat")
+   "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/data/icudtl.dat")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/data" TYPE FILE FILES "/home/karim/Desktop/md/projectt/linux/flutter/ephemeral/icudtl.dat")
+  file(INSTALL DESTINATION "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/data" TYPE FILE FILES "/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/icudtl.dat")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so")
+   "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/lib/libflutter_linux_gtk.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/karim/Desktop/md/projectt/linux/flutter/ephemeral/libflutter_linux_gtk.so")
+  file(INSTALL DESTINATION "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/libflutter_linux_gtk.so")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/lib/libfile_selector_linux_plugin.so")
+   "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/lib/libfile_selector_linux_plugin.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/file_selector_linux/libfile_selector_linux_plugin.so")
+  file(INSTALL DESTINATION "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/file_selector_linux/libfile_selector_linux_plugin.so")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/lib/libgtk_plugin.so")
+   "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/lib/libgtk_plugin.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/gtk/libgtk_plugin.so")
+  file(INSTALL DESTINATION "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/gtk/libgtk_plugin.so")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/lib/liburl_launcher_linux_plugin.so")
+   "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/lib/liburl_launcher_linux_plugin.so")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/url_launcher_linux/liburl_launcher_linux_plugin.so")
+  file(INSTALL DESTINATION "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/lib" TYPE FILE FILES "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/url_launcher_linux/liburl_launcher_linux_plugin.so")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/lib/")
+   "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/lib/")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/lib" TYPE DIRECTORY FILES "/home/karim/Desktop/md/projectt/build/native_assets/linux/")
+  file(INSTALL DESTINATION "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/lib" TYPE DIRECTORY FILES "/home/karim/Documents/GitHub/EvEra/build/native_assets/linux/")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   
-  file(REMOVE_RECURSE "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/data/flutter_assets")
+  file(REMOVE_RECURSE "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/data/flutter_assets")
   
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Runtime" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/data/flutter_assets")
+   "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/data/flutter_assets")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle/data" TYPE DIRECTORY FILES "/home/karim/Desktop/md/projectt/build//flutter_assets")
+  file(INSTALL DESTINATION "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle/data" TYPE DIRECTORY FILES "/home/karim/Documents/GitHub/EvEra/build//flutter_assets")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/karim/Desktop/md/projectt/build/linux/x64/debug/flutter/cmake_install.cmake")
-  include("/home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/file_selector_linux/cmake_install.cmake")
-  include("/home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/gtk/cmake_install.cmake")
-  include("/home/karim/Desktop/md/projectt/build/linux/x64/debug/plugins/url_launcher_linux/cmake_install.cmake")
+  include("/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/flutter/cmake_install.cmake")
+  include("/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/file_selector_linux/cmake_install.cmake")
+  include("/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/gtk/cmake_install.cmake")
+  include("/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/plugins/url_launcher_linux/cmake_install.cmake")
 
 endif()
 
@@ -190,6 +190,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/home/karim/Desktop/md/projectt/build/linux/x64/debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -1,8 +1,8 @@
-# Install script for directory: /home/karim/Desktop/md/projectt/linux/flutter/ephemeral/.plugin_symlinks/gtk/linux
+# Install script for directory: /home/karim/Documents/GitHub/EvEra/linux/flutter/ephemeral/.plugin_symlinks/gtk/linux
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/karim/Desktop/md/projectt/build/linux/x64/debug/bundle")
+  set(CMAKE_INSTALL_PREFIX "/home/karim/Documents/GitHub/EvEra/build/linux/x64/debug/bundle")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
