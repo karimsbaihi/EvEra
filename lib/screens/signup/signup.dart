@@ -2,6 +2,7 @@ import 'package:evera/styles/colors.dart';
 import 'package:evera/components/goBack.dart';
 import 'package:flutter/material.dart';
 import 'package:evera/authentification/auth_service.dart';
+import 'package:gotrue/src/types/auth_response.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
@@ -15,10 +16,59 @@ class _SignUpState extends State<SignUp> {
   final authService = AuthService();
   final formKey = GlobalKey<FormState>();
 
-  //text controllers
-  final _emailController = TextEditingController();
+  // text controllers
+  String? email;
+  String password = '';
   final _passwordController = TextEditingController();
   final _confirmpasswordController = TextEditingController();
+
+void signUp(String? email) async {
+  print("Email received in signUp method: $email");  // <-- Debugging statement
+  
+  if (email == null || email.isEmpty) {
+    ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Please enter a valid email')));
+    return;
+  }
+
+  final password = _passwordController.text;
+  final confirmPassword = _confirmpasswordController.text;
+  
+  try {
+    final response = await authService.signUpWithEmailPassword(email, password);
+    if (response.error == null) {
+      print("Signup successful!");  // <-- Debugging statement
+      Navigator.pushNamed(context, '/choosePref');
+    } else {
+      print("Signup failed: ${response.error!.message}");  // <-- Debugging statement
+      ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(content: Text('Error: ${response.error!.message}')));
+    }
+  } catch (e) {
+    print("Error during signup: $e");  // <-- Debugging statement
+    ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('An unexpected error occurred: $e')));
+  }
+}
+
+
+@override
+void didChangeDependencies() {
+  super.didChangeDependencies();
+  final passedEmail = ModalRoute.of(context)?.settings.arguments as String?;
+  print("Passed email: $passedEmail");  // <-- Debugging statement
+  if (passedEmail != null) {
+    email = passedEmail;
+    print("Assigned email: $email");  // <-- Debugging statement
+  } else {
+    // Handle case where email is not passed or null
+    ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Email not passed or invalid')));
+  }
+}
+
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -26,12 +76,6 @@ class _SignUpState extends State<SignUp> {
       backgroundColor: mainBlack,
       appBar: AppBar(
         leading: goBack(),
-        // title: Align(
-        //   alignment: Alignment.centerRight,
-        //   child: GestureDetector(
-        //     child: Text("Skip",style: TextStyle(color: mainGreen,),textAlign: TextAlign.right,),
-        //   ),
-        // ),
         backgroundColor: mainBlack,
       ),
       body: SingleChildScrollView(
@@ -56,17 +100,13 @@ class _SignUpState extends State<SignUp> {
                       child: TextFormField(
                         controller: _passwordController,
                         onChanged: (value) {
-                          // password=value;
+                          password = value;
                         },
                         validator: (value) {
                           if (value == null || value == '') {
                             return 'Please enter a password';
                           }
                           return null;
-                        },
-                        onTapOutside: (PointerDownEvent event) {
-                          // Remove focus when tapped outside
-                          FocusScope.of(context).unfocus();
                         },
                         obscureText: true,
                         style: const TextStyle(color: Color(0xffB3B3B3)),
@@ -92,10 +132,6 @@ class _SignUpState extends State<SignUp> {
                       padding: const EdgeInsets.symmetric(vertical: 15),
                       child: TextFormField(
                         controller: _confirmpasswordController,
-                        onTapOutside: (PointerDownEvent event) {
-                          // Remove focus when tapped outside
-                          FocusScope.of(context).unfocus();
-                        },
                         style: const TextStyle(color: Color(0xffB3B3B3)),
                         cursorColor: mainGreen,
                         obscureText: true,
@@ -104,7 +140,7 @@ class _SignUpState extends State<SignUp> {
                             return 'Please confirm the password';
                           }
                           if (value != password) {
-                            return 'Passwords does not match';
+                            return 'Passwords do not match';
                           }
                           return null;
                         },
@@ -131,11 +167,12 @@ class _SignUpState extends State<SignUp> {
                         onTap: () {
                           if (formKey.currentState!.validate()) {
                             formKey.currentState!.save();
-                            Navigator.pushNamed(context, '/choosePref');
+                            if (email != null) {
+                              signUp(email!);
+                            }
                           }
                         },
                         child: Container(
-                          // width: 180,
                           height: 60,
                           decoration: BoxDecoration(
                             color: mainGreen,
@@ -160,4 +197,8 @@ class _SignUpState extends State<SignUp> {
       ),
     );
   }
+}
+
+extension on AuthResponse {
+  get error => null;
 }

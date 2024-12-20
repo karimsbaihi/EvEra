@@ -9,6 +9,8 @@ authenticated -> profile page
 
 */
 
+import 'package:evera/screens/Home.dart';
+import 'package:evera/screens/Login.dart';  
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -18,12 +20,11 @@ class AuthGate extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return StreamBuilder(
-      //listen to the auth state changes
+      // Listen to the auth state changes
       stream: Supabase.instance.client.auth.onAuthStateChange,
-
-      //build appropriate pages based on the auth state,
+      
       builder: (context, snapshot) {
-        //loading
+        // Loading state
         if (snapshot.connectionState == ConnectionState.waiting) {
           return Scaffold(
             body: Center(
@@ -31,7 +32,22 @@ class AuthGate extends StatelessWidget {
             ),
           );
         }
-        ;
+
+        // Error state handling
+        if (snapshot.hasError) {
+          return Scaffold(
+            body: Center(
+              child: Text('Error: ${snapshot.error}'),
+            ),
+          );
+        }
+
+        final session = snapshot.hasData ? snapshot.data!.session : null;
+        if (session != null) {
+          return Home(); // Authenticated state -> Home screen
+        } else {
+          return Login(); // Unauthenticated state -> Login screen
+        }
       },
     );
   }

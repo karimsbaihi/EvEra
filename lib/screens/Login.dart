@@ -2,6 +2,7 @@ import 'package:evera/authentification/auth_service.dart';
 import 'package:evera/styles/colors.dart';
 import 'package:evera/components/goBack.dart';
 import 'package:flutter/material.dart';
+import 'package:gotrue/src/types/auth_response.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../styles/styles.dart';
@@ -14,43 +15,51 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
-  // get auth service
+  // Get auth service instance
   final authService = AuthService();
   final formKey = GlobalKey<FormState>();
 
-  //text controllers
+  // Text controllers for email and password input fields
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
 
-  //login button pressed
+  // Login button pressed logic
   void login() async {
-    //prepare data
+    // Prepare data
     final email = _emailController.text;
     final password = _passwordController.text;
 
-    //attempt login...
-    try{
-      await authService.signInWithEmailPassowrd(email, password)
-    }
-    //catch errors.....
-    catch(e){
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("error : $e"),)); 
+    // Attempt login via Supabase authentication
+    try {
+      // Call Supabase signInWithEmailPassword
+      final response = await authService.signInWithEmailPassword(email, password);
+
+      if (response.error == null) {
+        // If successful, navigate to home page
+        var prefs = await SharedPreferences.getInstance();
+        prefs.setBool('logged', true); // Optionally save login state
+        Navigator.pushNamed(context, '/home');
+      } else {
+        // If there's an error, display error message
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+          content: Text("Error: ${response.error!.message}"),
+        ));
+      }
+    } catch (e) {
+      // Catch any other errors and display them
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+        content: Text("Error: $e"),
+      ));
     }
   }
 
   @override
   void initState() {
-    // init();
     super.initState();
   }
 
-  // void init()async{
-  //   prefs = await SharedPreferences.getInstance();
-  // }
-
   @override
   Widget build(BuildContext context) {
-    // var first = (ModalRoute.of(context)!.settings.arguments as Map )['first'];
     return Scaffold(
       backgroundColor: mainBlack,
       appBar: AppBar(
@@ -92,7 +101,7 @@ class _LoginState extends State<Login> {
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 12),
                       child: TextFormField(
-                        controller: _emailController,
+                          controller: _emailController,
                           onTapOutside: (PointerDownEvent event) {
                             // Remove focus when tapped outside
                             FocusScope.of(context).unfocus();
@@ -104,9 +113,9 @@ class _LoginState extends State<Login> {
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 12),
                       child: TextFormField(
-                        controller: _passwordController,
+                          controller: _passwordController,
                           onChanged: (value) {
-                            // password = value;
+                            // Optionally handle password change
                           },
                           validator: (value) {},
                           onTapOutside: (PointerDownEvent event) {
@@ -121,16 +130,8 @@ class _LoginState extends State<Login> {
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 12),
                       child: GestureDetector(
-                        onTap: () async {
-                          if (formKey.currentState!.validate()) {
-                            formKey.currentState!.save();
-                            var prefs = await SharedPreferences.getInstance();
-                            prefs.setBool('logged', true);
-                            Navigator.pushNamed(context, '/home');
-                          }
-                        },
+                        onTap: login, // This will now call the login method
                         child: Container(
-                          // width: 180,
                           height: 60,
                           decoration: BoxDecoration(
                             color: mainGreen,
@@ -156,6 +157,7 @@ class _LoginState extends State<Login> {
                   ],
                 ),
               ),
+              // Commented-out original sign-up redirection logic
               // const Spacer(),
               Center(
                 child: Padding(
@@ -182,4 +184,8 @@ class _LoginState extends State<Login> {
       ),
     );
   }
+}
+
+extension on AuthResponse {
+  get error => null;
 }

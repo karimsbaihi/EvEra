@@ -8,8 +8,6 @@ import 'package:image_picker/image_picker.dart';
 
 import '../../constants.dart';
 
-
-
 class SignUpProfile extends StatefulWidget {
   const SignUpProfile({super.key});
 
@@ -18,7 +16,8 @@ class SignUpProfile extends StatefulWidget {
 }
 
 class _SignUpProfileState extends State<SignUpProfile> {
-
+  // email bull
+  final _emailController = TextEditingController();
 
   final RegExp emailRegExp = RegExp(
     r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$',
@@ -30,17 +29,14 @@ class _SignUpProfileState extends State<SignUpProfile> {
     r'^0([675])[0-9]{8}',
   );
 
-
   // final RegExp nameRegEx = RegExp(r"^[a-zA-Z\u00C0-\u017F]+(?:[-\'\s][a-zA-Z\u00C0-\u017F]+)*$", unicode: true);
 
   final fullNameRegex = RegExp(
       r"(^[A-Za-z]{3,16})([ ]{0,1})([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})?([ ]{0,1})?([A-Za-z]{3,16})",
       // r"^[a-zA-ZÀ-ÿ]+(?:[-\'\s][a-zA-ZÀ-ÿ]+)*$",
-    unicode: true
-  );
+      unicode: true);
 
   final formKey = GlobalKey<FormState>();
-
 
   DateTime? _selectedDate;
 
@@ -81,7 +77,7 @@ class _SignUpProfileState extends State<SignUpProfile> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          titleTextStyle: TextStyle(color: inputHint,fontSize: 24),
+          titleTextStyle: TextStyle(color: inputHint, fontSize: 24),
           backgroundColor: mainBlack,
           title: const Text('Choose an option'),
           content: Column(
@@ -89,16 +85,21 @@ class _SignUpProfileState extends State<SignUpProfile> {
             children: [
               ListTile(
                 leading: const Icon(Icons.camera),
-                title: Text('Camera',style: TextStyle(color: inputHint),),
+                title: Text(
+                  'Camera',
+                  style: TextStyle(color: inputHint),
+                ),
                 onTap: () async {
-                  Navigator.of(context).pop(await picker.pickImage(source: ImageSource.camera));
+                  Navigator.of(context)
+                      .pop(await picker.pickImage(source: ImageSource.camera));
                 },
               ),
               ListTile(
                 leading: const Icon(Icons.photo),
-                title: Text('Gallery',style: TextStyle(color: inputHint)),
+                title: Text('Gallery', style: TextStyle(color: inputHint)),
                 onTap: () async {
-                  Navigator.of(context).pop(await picker.pickImage(source: ImageSource.gallery));
+                  Navigator.of(context)
+                      .pop(await picker.pickImage(source: ImageSource.gallery));
                 },
               ),
             ],
@@ -119,7 +120,7 @@ class _SignUpProfileState extends State<SignUpProfile> {
     return Scaffold(
       backgroundColor: mainBlack,
       appBar: AppBar(
-        leading:  goBack(),
+        leading: goBack(),
         title: Row(
           children: [
             // const Text("Profile",style: TextStyle(fontSize: 25,color: Colors.white),),
@@ -127,10 +128,14 @@ class _SignUpProfileState extends State<SignUpProfile> {
             Align(
               alignment: Alignment.centerRight,
               child: GestureDetector(
-                onTap: (){
-
-                },
-                child: Text("Skip",style: TextStyle(color: mainGreen,),textAlign: TextAlign.right,),
+                onTap: () {},
+                child: Text(
+                  "Skip",
+                  style: TextStyle(
+                    color: mainGreen,
+                  ),
+                  textAlign: TextAlign.right,
+                ),
               ),
             ),
           ],
@@ -150,46 +155,50 @@ class _SignUpProfileState extends State<SignUpProfile> {
                   children: [
                     _image == null
                         ? ClipRRect(
-                      borderRadius:BorderRadius.circular(100),
-                      child: Container(
-                        height:MediaQuery.sizeOf(context).width*0.32,
-                        width:MediaQuery.sizeOf(context).width*0.32,
-                        color: secondBlack,
-                      ),
-                    )
+                            borderRadius: BorderRadius.circular(100),
+                            child: Container(
+                              height: MediaQuery.sizeOf(context).width * 0.32,
+                              width: MediaQuery.sizeOf(context).width * 0.32,
+                              color: secondBlack,
+                            ),
+                          )
                         : ClipRRect(
-                      borderRadius: BorderRadius.circular(100),
-                        child: SizedBox(height:120,width:120,child: FittedBox(fit:BoxFit.cover,child: Image.file(_image!)))
-                    ),
+                            borderRadius: BorderRadius.circular(100),
+                            child: SizedBox(
+                                height: 120,
+                                width: 120,
+                                child: FittedBox(
+                                    fit: BoxFit.cover,
+                                    child: Image.file(_image!)))),
                     GestureDetector(
-                      onTap: _pickImage,
+                        onTap: _pickImage,
                         child: Padding(
                           padding: const EdgeInsets.fromLTRB(0, 10, 0, 30),
-                          child: Text('Add Photo',style: TextStyle(color: mainGreen,fontSize: 16),),
-                        )
-                    ),
+                          child: Text(
+                            'Add Photo',
+                            style: TextStyle(color: mainGreen, fontSize: 16),
+                          ),
+                        )),
 
                     Padding(
-                      padding: const EdgeInsets.symmetric(vertical:8),
+                      padding: const EdgeInsets.symmetric(vertical: 8),
                       child: TextFormField(
-                        autovalidateMode: AutovalidateMode.onUnfocus,
-                        onTapOutside: (PointerDownEvent event) {
-                          // Remove focus when tapped outside
-                          FocusScope.of(context).unfocus();
-                        },
-                        style: const TextStyle(color: Colors.white),
-                        cursorColor: mainGreen,
-                        validator: (value){
-                          if (value == null|| value == '') {
-                            return 'Please enter your Name';
-                          } else if (!fullNameRegex.hasMatch(value)) {
-                            return 'Please enter a valid name';
-                          }
-                          return null;
-                        },
-                        decoration: InputDeco("Full Name")
-
-                      ),
+                          autovalidateMode: AutovalidateMode.onUnfocus,
+                          onTapOutside: (PointerDownEvent event) {
+                            // Remove focus when tapped outside
+                            FocusScope.of(context).unfocus();
+                          },
+                          style: const TextStyle(color: Colors.white),
+                          cursorColor: mainGreen,
+                          validator: (value) {
+                            if (value == null || value == '') {
+                              return 'Please enter your Name';
+                            } else if (!fullNameRegex.hasMatch(value)) {
+                              return 'Please enter a valid name';
+                            }
+                            return null;
+                          },
+                          decoration: InputDeco("Full Name")),
                     ),
                     // Padding(
                     //   padding: const EdgeInsets.symmetric(vertical: 8),
@@ -216,6 +225,7 @@ class _SignUpProfileState extends State<SignUpProfile> {
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 8),
                       child: TextFormField(
+                        controller: _emailController,
                         autovalidateMode: AutovalidateMode.onUnfocus,
                         onTapOutside: (PointerDownEvent event) {
                           // Remove focus when tapped outside
@@ -223,9 +233,8 @@ class _SignUpProfileState extends State<SignUpProfile> {
                         },
                         style: const TextStyle(color: Colors.white),
                         cursorColor: mainGreen,
-                        validator:(value) => validateEmail(value),
+                        validator: (value) => validateEmail(value),
                         decoration: InputDeco("Email"),
-
                       ),
                     ),
                     Padding(
@@ -238,8 +247,8 @@ class _SignUpProfileState extends State<SignUpProfile> {
                         },
                         style: const TextStyle(color: Colors.white),
                         cursorColor: mainGreen,
-                        validator:(value) {
-                          if (value == null|| value == '') {
+                        validator: (value) {
+                          if (value == null || value == '') {
                             return 'Please enter your phone number';
                           } else if (!phoneRegEx.hasMatch(value)) {
                             return 'Please enter a valid phone number';
@@ -247,7 +256,6 @@ class _SignUpProfileState extends State<SignUpProfile> {
                           return null;
                         },
                         decoration: InputDeco("Phone Number"),
-
                       ),
                     ),
                     Padding(
@@ -255,23 +263,24 @@ class _SignUpProfileState extends State<SignUpProfile> {
                       child: DropdownButtonFormField(
                         autovalidateMode: AutovalidateMode.disabled,
                         elevation: 3,
-                        validator: (value){
-                          if(value == null|| value == ''){
+                        validator: (value) {
+                          if (value == null || value == '') {
                             return 'Please select Gender';
                           }
                           return null;
                         },
                         borderRadius: BorderRadius.circular(10),
-                        style: const TextStyle(fontSize: 16,color: Colors.white),
+                        style:
+                            const TextStyle(fontSize: 16, color: Colors.white),
                         decoration: InputDecoration(
                           isDense: false,
                           fillColor: secondBlack,
                           filled: true,
                           border: OutlineInputBorder(
-                            borderRadius: BorderRadius.circular(40),
-                          borderSide: BorderSide.none
-                          ),
-                          contentPadding: const EdgeInsets.symmetric(horizontal: 25,vertical: 20),
+                              borderRadius: BorderRadius.circular(40),
+                              borderSide: BorderSide.none),
+                          contentPadding: const EdgeInsets.symmetric(
+                              horizontal: 25, vertical: 20),
                         ),
                         dropdownColor: secondBlack,
                         items: const [
@@ -284,10 +293,9 @@ class _SignUpProfileState extends State<SignUpProfile> {
                             child: Text("Female"),
                           ),
                         ],
-                        onChanged: (value){},
-                        hint: Text("Gender",style: TextStyle(fontSize: 16,color: inputHint)),
-
-
+                        onChanged: (value) {},
+                        hint: Text("Gender",
+                            style: TextStyle(fontSize: 16, color: inputHint)),
                       ),
                     ),
                     Padding(
@@ -299,26 +307,34 @@ class _SignUpProfileState extends State<SignUpProfile> {
                             style: const TextStyle(color: Colors.white),
                             readOnly: true,
                             controller: TextEditingController(
-                              text: _selectedDate?.toString().substring(0, 10).replaceAll('-', '/') ?? '',
+                              text: _selectedDate
+                                      ?.toString()
+                                      .substring(0, 10)
+                                      .replaceAll('-', '/') ??
+                                  '',
                             ),
                             decoration: InputDecoration(
                               suffixIcon: Padding(
                                 padding: const EdgeInsets.fromLTRB(0, 0, 8, 0),
-                                child: Icon(Icons.calendar_today_outlined,color: inputHint,),
+                                child: Icon(
+                                  Icons.calendar_today_outlined,
+                                  color: inputHint,
+                                ),
                               ),
                               hintText: "Date of Birth",
-                              hintStyle: TextStyle(fontSize: 16,color: inputHint),
+                              hintStyle:
+                                  TextStyle(fontSize: 16, color: inputHint),
                               filled: true,
                               fillColor: secondBlack,
                               border: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(40),
-                                  borderSide: BorderSide.none
-                              ),
+                                  borderSide: BorderSide.none),
                               focusedBorder: OutlineInputBorder(
                                   borderRadius: BorderRadius.circular(40),
-                                  borderSide: BorderSide(color: mainGreen,width: 1.5)
-                              ),
-                              contentPadding: const EdgeInsets.symmetric(horizontal: 30,vertical: 20),
+                                  borderSide:
+                                      BorderSide(color: mainGreen, width: 1.5)),
+                              contentPadding: const EdgeInsets.symmetric(
+                                  horizontal: 30, vertical: 20),
                             ),
                           ),
                         ),
@@ -327,11 +343,19 @@ class _SignUpProfileState extends State<SignUpProfile> {
                     Padding(
                       padding: const EdgeInsets.fromLTRB(0, 35, 0, 10),
                       child: GestureDetector(
-                        onTap: (){
+                        onTap: () {
                           if (formKey.currentState!.validate()) {
                             formKey.currentState!.save();
-                            Navigator.pushNamed(context, '/signup2');
+                            String email =
+                                _emailController.text; // Get the email entered
+                            print('email : $email');
+                            Navigator.pushNamed(
+                              context,
+                              '/signup2', // The route to SignUp page
+                              arguments: email, // Pass the email as an argument
+                            );
                           }
+                          ;
                         },
                         child: Container(
                           // width: 180,
@@ -343,13 +367,13 @@ class _SignUpProfileState extends State<SignUpProfile> {
                           child: const Center(
                             child: Text(
                               "Continue",
-                              style: TextStyle(fontSize: 24,color: Colors.white),
+                              style:
+                                  TextStyle(fontSize: 24, color: Colors.white),
                             ),
                           ),
                         ),
                       ),
                     ),
-
                   ],
                 ),
               ),
